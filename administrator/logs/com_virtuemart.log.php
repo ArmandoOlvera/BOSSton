@@ -207,3 +207,31 @@
 2019-01-27 20:53:45 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
 2019-01-27 20:54:01 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
 2019-01-27 20:54:29 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-27 21:05:45 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:21:46 ERROR vmError: Failed to parse the Currency Converter XML document.
+2019-01-28 02:21:46 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2019-01-28 02:24:08 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:24:17 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:24:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:25:25 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:25:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:25:37 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:25:42 ERROR vmError: Failed to parse the Currency Converter XML document.
+2019-01-28 02:25:42 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2019-01-28 02:30:37 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:35:59 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-28 02:36:06 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/

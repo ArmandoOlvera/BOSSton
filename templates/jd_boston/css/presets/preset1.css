@@ -1,40 +1,40 @@
 a {
-  color: #02aed6;
+  color: #0799ba;
 }
 a:hover {
-  color: #0285a3;
+  color: #057189;
 }
 .sp-megamenu-parent >li.active>a,
 .sp-megamenu-parent >li:hover>a {
-  color: #02aed6;
+  color: #0799ba;
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item >a:hover {
-  background: #02aed6;
+  background: #0799ba;
 }
 .sp-megamenu-parent .sp-dropdown li.sp-menu-item.active>a {
-  color: #02aed6;
+  color: #0799ba;
 }
 #offcanvas-toggler >i {
   color: #000000;
 }
 #offcanvas-toggler >i:hover {
-  color: #02aed6;
+  color: #0799ba;
 }
 .btn-primary,
 .sppb-btn-primary {
-  border-color: #0295b8;
-  background-color: #02aed6;
+  border-color: #06819d;
+  background-color: #0799ba;
 }
 .btn-primary:hover,
 .sppb-btn-primary:hover {
-  border-color: #01708a;
-  background-color: #0285a3;
+  border-color: #045c70;
+  background-color: #057189;
 }
 ul.social-icons >li a:hover {
-  color: #02aed6;
+  color: #0799ba;
 }
 .sp-page-title {
-  background: #02aed6;
+  background: #0799ba;
 }
 .layout-boxed .body-innerwrapper {
   background: #ffffff;
@@ -43,50 +43,50 @@ ul.social-icons >li a:hover {
   color: #000000;
 }
 .sp-module ul >li >a:hover {
-  color: #02aed6;
+  color: #0799ba;
 }
 .sp-module .latestnews >div >a {
   color: #000000;
 }
 .sp-module .latestnews >div >a:hover {
-  color: #02aed6;
+  color: #0799ba;
 }
 .sp-module .tagscloud .tag-name:hover {
-  background: #02aed6;
+  background: #0799ba;
 }
 .sp-simpleportfolio .sp-simpleportfolio-filter > ul > li.active > a,
 .sp-simpleportfolio .sp-simpleportfolio-filter > ul > li > a:hover {
-  background: #02aed6;
+  background: #0799ba;
 }
 .search .btn-toolbar button {
-  background: #02aed6;
+  background: #0799ba;
 }
 .post-format {
-  background: #02aed6;
+  background: #0799ba;
 }
 .voting-symbol span.star.active:before {
-  color: #02aed6;
+  color: #0799ba;
 }
 .sp-rating span.star:hover:before,
 .sp-rating span.star:hover ~ span.star:before {
-  color: #0285a3;
+  color: #057189;
 }
 .entry-link,
 .entry-quote {
-  background: #02aed6;
+  background: #0799ba;
 }
 blockquote {
-  border-color: #02aed6;
+  border-color: #0799ba;
 }
 .carousel-left:hover,
 .carousel-right:hover {
-  background: #02aed6;
+  background: #0799ba;
 }
 #sp-footer {
-  background: #02aed6;
+  background: #0799ba;
 }
 .sp-comingsoon body {
-  background-color: #02aed6;
+  background-color: #0799ba;
 }
 .pagination>li>a,
 .pagination>li>span {
@@ -100,13 +100,13 @@ blockquote {
 }
 .pagination>.active>a,
 .pagination>.active>span {
-  border-color: #02aed6;
-  background-color: #02aed6;
+  border-color: #0799ba;
+  background-color: #0799ba;
 }
 .pagination>.active>a:hover,
 .pagination>.active>a:focus,
 .pagination>.active>span:hover,
 .pagination>.active>span:focus {
-  border-color: #02aed6;
-  background-color: #02aed6;
+  border-color: #0799ba;
+  background-color: #0799ba;
 }
