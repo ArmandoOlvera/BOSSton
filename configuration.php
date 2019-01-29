@@ -3,7 +3,7 @@ class JConfig {
 	public $offline = '1';
 	public $offline_message = 'Este sitio está fuera de servicio por mantenimiento.<br />Por favor regrese más tarde.';
 	public $display_offline_message = '1';
-	public $offline_image = 'images/dA622n.gif';
+	public $offline_image = '';
 	public $sitename = 'GoldenWInd';
 	public $editor = 'tinymce';
 	public $captcha = '0';
@@ -94,7 +94,7 @@ class JConfig {
 	public $session_redis_server_port = '6379';
 	public $session_redis_server_auth = '';
 	public $session_redis_server_db = '0';
-	public $frontediting = '1';
+	public $frontediting = '2';
 	public $cookie_domain = '';
 	public $cookie_path = '';
 	public $asset_id = '1';
