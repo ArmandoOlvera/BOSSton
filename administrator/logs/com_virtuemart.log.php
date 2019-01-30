@@ -440,3 +440,139 @@
 2019-01-29 02:28:05 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
 2019-01-29 02:28:09 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
 2019-01-29 02:30:38 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 15:58:05 ERROR vmError: Failed to parse the Currency Converter XML document.
+2019-01-29 15:58:05 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2019-01-29 16:00:11 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:00:18 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:00:45 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:01:11 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:03:58 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:10:03 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:10:13 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:13:59 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:14:01 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:14:09 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:14:28 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:14:32 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:14:47 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:14:57 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:15:01 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:15:01 ERROR vmError: vmPdf: For the pdf, you must install the tcpdf library at /var/www/html/rikito-theme/libraries/tcpdf
+2019-01-29 16:15:30 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:15:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:15:41 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:15:52 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:21:18 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:23:49 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:24:04 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:24:36 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:25:01 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:31:27 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:31:41 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:31:52 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:32:21 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:32:30 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:32:41 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:33:43 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:33:54 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:34:38 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:34:51 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:34:58 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:35:08 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:35:39 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:36:36 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:41:00 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-29 16:41:40 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:12:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:12:42 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:12:49 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:15:31 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:39:01 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:39:54 ERROR vmError: Failed to parse the Currency Converter XML document.
+2019-01-30 02:39:54 ERROR vmError: The content: &lt;html&gt;
+&lt;head&gt;&lt;title&gt;301 Moved Permanently&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;center&gt;&lt;h1&gt;301 Moved Permanently&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;Myra&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+2019-01-30 02:40:29 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:40:38 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:40:50 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:41:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:41:50 ERROR vmError: Save failed with the following error: This email address is already registered.
+2019-01-30 02:41:56 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:42:03 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:42:05 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:42:57 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:43:11 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:43:13 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:43:15 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:43:22 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:43:52 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:44:05 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:44:10 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:44:14 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:44:19 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:44:21 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:44:58 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:45:14 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:45:18 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:45:19 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:46:22 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:47:04 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:51:04 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:52:16 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:52:22 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:59:43 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 02:59:50 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:05:14 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:05:37 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:05:43 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:05:50 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:05:53 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:05:55 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:06:48 ERROR vmError: VmPDF helper: For the PDF invoice and other PDF business letters, you must install the tcpdf library at /var/www/html/rikito-theme/libraries/tcpdf
+2019-01-30 03:06:48 ERROR vmError: Path wrong to store invoices, folder invoices does not exist vmfiles\/invoices/
+2019-01-30 03:06:48 ERROR vmError: vmPdf: For the pdf, you must install the tcpdf library at /var/www/html/rikito-theme/libraries/tcpdf
+2019-01-30 03:08:10 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:14:48 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:15:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:16:17 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:02 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:13 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:16 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:23 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:31 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:34 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:38 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:47 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:55 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:18:57 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:40:16 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:40:21 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:40:28 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:40:38 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:41:12 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:41:23 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:41:27 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:41:36 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:42:00 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:42:11 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:42:46 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:42:57 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:43:10 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:43:13 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:43:24 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:43:36 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:43:36 ERROR vmError: vmPdf: For the pdf, you must install the tcpdf library at /var/www/html/rikito-theme/libraries/tcpdf
+2019-01-30 03:43:49 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
+2019-01-30 03:44:07 ERROR vmError: The path for invoices seems to miss the correct file permissions Safe Path vmfiles\/
