@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.4
+-- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 16-06-2017 a las 07:12:59
--- Versión del servidor: 10.1.19-MariaDB
--- Versión de PHP: 7.0.13
+-- Servidor: localhost
+-- Tiempo de generación: 24-02-2019 a las 01:00:42
+-- Versión del servidor: 10.1.37-MariaDB
+-- Versión de PHP: 5.6.39
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,6 +21,25 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `oswa_inv`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `catcliente`
+--
+
+CREATE TABLE `catcliente` (
+  `idCategoria` int(11) NOT NULL,
+  `categoria` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `catcliente`
+--
+
+INSERT INTO `catcliente` (`idCategoria`, `categoria`) VALUES
+(1, 'Premium'),
+(2, 'Normal');
 
 -- --------------------------------------------------------
 
@@ -37,6 +58,38 @@ CREATE TABLE `categories` (
 
 INSERT INTO `categories` (`id`, `name`) VALUES
 (1, 'Repuestos');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `clientes`
+--
+
+CREATE TABLE `clientes` (
+  `idCliente` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `categoria` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `clientes`
+--
+
+INSERT INTO `clientes` (`idCliente`, `nombre`, `categoria`) VALUES
+(1, 'Juan Perez123', 'Premium');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `detalleventas`
+--
+
+CREATE TABLE `detalleventas` (
+  `idDetalle` int(11) NOT NULL,
+  `idVenta` int(11) DEFAULT NULL,
+  `idProduct` int(11) DEFAULT NULL,
+  `cantidad` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -79,7 +132,8 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `quantity`, `buy_price`, `sale_price`, `categorie_id`, `media_id`, `date`) VALUES
-(1, 'Filtro de gasolina', '100', '5.00', '10.00', 1, 1, '2017-06-16 07:03:16');
+(1, 'Filtro de gasolina', '84', '5.00', '10.00', 1, 1, '2017-06-16 07:03:16'),
+(2, 'Tornillo Universal', '8', '100.00', '150.00', 1, 1, '2019-02-22 16:29:05');
 
 -- --------------------------------------------------------
 
@@ -88,12 +142,25 @@ INSERT INTO `products` (`id`, `name`, `quantity`, `buy_price`, `sale_price`, `ca
 --
 
 CREATE TABLE `sales` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id` int(11) NOT NULL,
   `product_id` int(11) UNSIGNED NOT NULL,
-  `qty` int(11) NOT NULL,
-  `price` decimal(25,2) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `qty` int(11) DEFAULT NULL,
+  `price` decimal(25,2) DEFAULT NULL,
+  `date` date DEFAULT NULL,
+  `tax` decimal(25,2) DEFAULT NULL,
+  `idVenta` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `sales`
+--
+
+INSERT INTO `sales` (`id`, `product_id`, `qty`, `price`, `date`, `tax`, `idVenta`) VALUES
+(1, 1, 2, '20.00', '2019-02-23', '23.20', 5),
+(3, 2, 1, '150.00', '2019-02-23', '174.00', 8),
+(4, 1, 1, '10.00', '2019-02-23', '11.60', 9),
+(5, 2, 2, '300.00', '2019-02-23', '348.00', 9),
+(6, 1, 1, '10.00', '2019-02-23', '11.60', 10);
 
 -- --------------------------------------------------------
 
@@ -117,7 +184,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `username`, `password`, `user_level`, `image`, `status`, `last_login`) VALUES
-(1, 'Admin Users', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, 'pzg9wa7o1.jpg', 1, '2017-06-16 07:11:11'),
+(1, 'Admin Users', 'admin', 'd033e22ae348aeb5660fc2140aec35850c4da997', 1, 'pzg9wa7o1.jpg', 1, '2019-02-23 22:45:09'),
 (2, 'Special User', 'special', 'ba36b97a41e7faf742ab09bf88405ac04f99599a', 2, 'no_image.jpg', 1, '2017-06-16 07:11:26'),
 (3, 'Default User', 'user', '12dea96fec20593566ab75692c9949596833adc9', 3, 'no_image.jpg', 1, '2017-06-16 07:11:03');
 
@@ -143,9 +210,46 @@ INSERT INTO `user_groups` (`id`, `group_name`, `group_level`, `group_status`) VA
 (2, 'Special', 2, 0),
 (3, 'User', 3, 1);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `ventas`
+--
+
+CREATE TABLE `ventas` (
+  `idVenta` int(11) NOT NULL,
+  `idCliente` int(11) DEFAULT NULL,
+  `fecha` date DEFAULT NULL,
+  `total` float DEFAULT NULL,
+  `subtotal` float DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `ventas`
+--
+
+INSERT INTO `ventas` (`idVenta`, `idCliente`, `fecha`, `total`, `subtotal`) VALUES
+(1, 1, '2008-11-11', 10, 11),
+(2, 1, '2019-02-23', 23.2, 20),
+(3, 1, '2019-02-23', 23.2, 20),
+(4, 1, '2019-02-23', 197.2, 170),
+(5, 1, '2019-02-23', 197.2, 170),
+(6, 1, '2019-02-23', 197.2, 170),
+(7, 1, '2019-02-23', 197.2, 170),
+(8, 1, '2019-02-23', 197.2, 170),
+(9, 1, '2019-02-23', 359.6, 310),
+(10, 1, '2019-02-23', 11.6, 10),
+(11, 1, '2019-02-23', 11.6, 10);
+
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `catcliente`
+--
+ALTER TABLE `catcliente`
+  ADD PRIMARY KEY (`idCategoria`);
 
 --
 -- Indices de la tabla `categories`
@@ -153,6 +257,19 @@ INSERT INTO `user_groups` (`id`, `group_name`, `group_level`, `group_status`) VA
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`);
+
+--
+-- Indices de la tabla `clientes`
+--
+ALTER TABLE `clientes`
+  ADD PRIMARY KEY (`idCliente`);
+
+--
+-- Indices de la tabla `detalleventas`
+--
+ALTER TABLE `detalleventas`
+  ADD PRIMARY KEY (`idDetalle`),
+  ADD KEY `idVenta` (`idVenta`);
 
 --
 -- Indices de la tabla `media`
@@ -175,7 +292,8 @@ ALTER TABLE `products`
 --
 ALTER TABLE `sales`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `product_id` (`product_id`);
+  ADD KEY `product_id` (`product_id`),
+  ADD KEY `idVenta` (`idVenta`);
 
 --
 -- Indices de la tabla `users`
@@ -193,42 +311,85 @@ ALTER TABLE `user_groups`
   ADD UNIQUE KEY `group_level` (`group_level`);
 
 --
+-- Indices de la tabla `ventas`
+--
+ALTER TABLE `ventas`
+  ADD PRIMARY KEY (`idVenta`),
+  ADD KEY `idCliente` (`idCliente`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `catcliente`
+--
+ALTER TABLE `catcliente`
+  MODIFY `idCategoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `clientes`
+--
+ALTER TABLE `clientes`
+  MODIFY `idCliente` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT de la tabla `detalleventas`
+--
+ALTER TABLE `detalleventas`
+  MODIFY `idDetalle` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT de la tabla `media`
 --
 ALTER TABLE `media`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
 -- AUTO_INCREMENT de la tabla `sales`
 --
 ALTER TABLE `sales`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- AUTO_INCREMENT de la tabla `user_groups`
 --
 ALTER TABLE `user_groups`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT de la tabla `ventas`
+--
+ALTER TABLE `ventas`
+  MODIFY `idVenta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `detalleventas`
+--
+ALTER TABLE `detalleventas`
+  ADD CONSTRAINT `detalleventas_ibfk_1` FOREIGN KEY (`idVenta`) REFERENCES `ventas` (`idVenta`);
 
 --
 -- Filtros para la tabla `products`
@@ -240,13 +401,21 @@ ALTER TABLE `products`
 -- Filtros para la tabla `sales`
 --
 ALTER TABLE `sales`
-  ADD CONSTRAINT `SK` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `sales_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`),
+  ADD CONSTRAINT `sales_ibfk_2` FOREIGN KEY (`idVenta`) REFERENCES `ventas` (`idVenta`);
 
 --
 -- Filtros para la tabla `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `FK_user` FOREIGN KEY (`user_level`) REFERENCES `user_groups` (`group_level`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Filtros para la tabla `ventas`
+--
+ALTER TABLE `ventas`
+  ADD CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`idCliente`) REFERENCES `clientes` (`idCliente`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

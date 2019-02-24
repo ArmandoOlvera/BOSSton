@@ -26,4 +26,5 @@
         <li><a href="daily_sales.php">Ventas diarias</a> </li>
       </ul>
   </li>
+  
 </ul>

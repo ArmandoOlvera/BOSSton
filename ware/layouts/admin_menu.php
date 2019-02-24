@@ -58,4 +58,14 @@
         <li><a href="daily_sales.php">Ventas diarias</a> </li>
       </ul>
   </li>
+  <li>
+    <a href="#" class="submenu-toggle">
+      <i class="glyphicon glyphicon-user"></i>
+      <span>Clientes</span>
+    </a>
+    <ul class="nav submenu">
+       <li><a href="clients.php">Administrar Clientes</a> </li>
+       <li><a href="add_client.php">Agregar Cliente</a> </li>
+   </ul>
+  </li>
 </ul>

@@ -1,6 +1,15 @@
 <?php
   require_once('includes/load.php');
-
+  /*--------------------------------------------------------------*/
+/* Function para encontrar los clientes por nombre
+/*--------------------------------------------------------------*/
+function find_client_by_title($client_name){
+     global $db;
+     $p_name2 = remove_junk($db->escape($client_name));
+     $sql = "SELECT nombre FROM clientes WHERE nombre like '%$p_name2%' LIMIT 5";
+     $result = find_by_sql($sql);
+     return $result;
+   }
 /*--------------------------------------------------------------*/
 /* Function for find all database table rows by table name
 /*--------------------------------------------------------------*/
@@ -36,6 +45,18 @@ function find_by_id($table,$id)
             return null;
      }
 }
+function find_by_idCliente($table,$id)
+{
+  global $db;
+  $id = (int)$id;
+    if(tableExists($table)){
+          $sql = $db->query("SELECT * FROM {$db->escape($table)} WHERE idCliente ={$db->escape($id)} LIMIT 1");
+          if($result = $db->fetch_assoc($sql))
+            return $result;
+          else
+            return null;
+     }
+}
 /*--------------------------------------------------------------*/
 /* Function for Delete data from table by id
 /*--------------------------------------------------------------*/
@@ -46,6 +67,18 @@ function delete_by_id($table,$id)
    {
     $sql = "DELETE FROM ".$db->escape($table);
     $sql .= " WHERE id=". $db->escape($id);
+    $sql .= " LIMIT 1";
+    $db->query($sql);
+    return ($db->affected_rows() === 1) ? true : false;
+   }
+}
+function delete_by_idClientes($table,$id)
+{
+  global $db;
+  if(tableExists($table))
+   {
+    $sql = "DELETE FROM ".$db->escape($table);
+    $sql .= " WHERE idCliente=". $db->escape($id);
     $sql .= " LIMIT 1";
     $db->query($sql);
     return ($db->affected_rows() === 1) ? true : false;
@@ -256,6 +289,48 @@ function tableExists($table){
     return($db->affected_rows() === 1 ? true : false);
 
   }
+
+  function obtenerIDCliente($sentencia){
+    global $db;
+    $ide='';
+    $result = $db->query($sentencia);
+    while($row = $result->fetch_assoc()) {//es como un result set dde java
+        $ide= $row["idCliente"];
+           }
+    return $ide;
+  }
+  function obtenerUltimaVenta($sentencia){
+    global $db;
+    $ide='';
+    $result = $db->query($sentencia);
+    while($row = $result->fetch_assoc()) {//es como un result set dde java
+        $ide= $row["idVenta"];
+           }
+    return $ide;
+  }
+  function obtenerUltimoCliente($sentencia){
+    global $db;
+    $ide='';
+    $result = $db->query($sentencia);
+    while($row = $result->fetch_assoc()) {//es como un result set dde java
+        $ide= $row["idVenta"];
+           }
+    return $ide;
+  }
+
+  function insertarUniversal($sentencia){
+    global $db;
+    $ide='';
+    $result = $db->query($sentencia);
+    return $result;
+  }
+
+  function insertarSales($sentencia){
+    global $db;
+    $ide='';
+    $result = $db->query($sentencia);
+    return $result;
+  }
   /*--------------------------------------------------------------*/
   /* Function for Display Recent product Added
   /*--------------------------------------------------------------*/
@@ -289,6 +364,17 @@ function tableExists($table){
    $sql .= " FROM sales s";
    $sql .= " LEFT JOIN products p ON s.product_id = p.id";
    $sql .= " ORDER BY s.date DESC";
+   return find_by_sql($sql);
+ }
+
+
+
+ function find_all_clients(){
+   global $db;
+   $sql  = "SELECT *";
+   $sql .= " FROM clientes";
+   $sql .= "";
+   $sql .= " ORDER BY nombre DESC";
    return find_by_sql($sql);
  }
  /*--------------------------------------------------------------*/
